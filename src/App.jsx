@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import Navbar from "./components/navbar";
+import './App.css';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1>DevInFood</h1>
+      <Navbar/>
     </div>
   )
 }
