@@ -3,3 +3,8 @@
     width: 30vw;
     border-radius: 10px;
 }
+
+#cardImage {
+    margin-top: 20px;
+    width: 20vw;
+}
