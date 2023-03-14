@@ -1,5 +1,5 @@
 import  {Card}  from  "../../components/Card";
-import './home.css';
+import './Home.css';
 import { useState } from 'react';
 import { useProdutos } from '../../hooks/useProdutos';
 
@@ -44,10 +44,12 @@ export const Home = () => {
                   key={item.id}
                   id={item.id}
                   imagem={item.img}
-                  nome={item.nome}
+                  produto={item.nome}
                   descricao={item.descricao}
-                  valor={item.valor}
+                  preco = {item.valor} 
                   tempoPreparo={item.tempoPreparo}
+                  selecionado={isSelecionado(item.id)}
+                  onSelecionar={handleSelecionar}
                 />
               ))}
             </div>
